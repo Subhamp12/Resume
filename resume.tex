@@ -1,0 +1,148 @@
+%-------------------------
+% Resume in Latex
+% Author : Subham Patel
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sam Patel} \\ \vspace{1pt}
+    \small 908-205-4240 $|$ \href{mailto:subham.patel@rutgers.edu}{\underline{subham.patel@rutgers.edu}} $|$ 
+    \href{https://github.com/Subhamp12}{\underline{github.com/Subhamp12}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University}{New Brunswick, NJ}
+      {Bachelor of Science in Computer Science and Data Science}{Aug. 2024 -- May 2028}
+    \resumeSubheading
+      {John P. Stevens High School}{Edison, NJ}
+      {High School Diploma | GPA: 4.9}{Sep. 2020 -- Jun. 2024}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{HealthSync} $|$ \emph{HTML5, Node.js, Chart.js, SQLite, Vercel}}{June 2024 -- August 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web-based application for users to track health metrics like steps, water intake, and sleep patterns.}
+            \resumeItem{Built a backend using Node.js and SQLite to store user data securely.}
+            \resumeItem{Integrated Chart.js to display health data analytics through simple and informative visualizations.}
+            \resumeItem{Deployed the application using Vercel, ensuring continuous deployment and updates.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Scarlet} $|$ \emph{React.js, Node.js, Express.js, MongoDB, Vite + Vue, Stripe API, Redux}}{Aug. 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a fully functional e-commerce platform for clothing sales targeted at students.}
+            \resumeItem{Implemented secure user authentication, order management, and payment processing via the Stripe API.}
+            \resumeItem{Built a robust admin panel using Vite and Vue.js for product and order management.}
+            \resumeItem{Handled over 100 transactions, generating \$1,500+ in monthly revenue.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, HTML5, Java, Python, C/C++} \\
+     \textbf{Frameworks}{: React, Node.js, Express.js, MongoDB, Vue.js} \\
+     \textbf{Developer Tools}{: Git, VS Code, Google Cloud Platform, IntelliJ, Eclipse} \\
+     \textbf{UI/UX}{: Figma, Adobe Creative Cloud} \\
+     \textbf{Databases}{: MongoDB, SQLite} \\
+     \textbf{Cloud Platforms}{: Google Cloud Platform, Vercel} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
