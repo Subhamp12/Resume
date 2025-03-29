@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Subham Patel
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -21,7 +14,7 @@
 \input{glyphtounicode}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -63,13 +56,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -77,91 +63,85 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Sam Patel} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Subham Patel} \\ \vspace{1pt}
     \small 908-205-4240 $|$ \href{mailto:subham.patel@rutgers.edu}{\underline{subham.patel@rutgers.edu}} $|$ 
     \href{https://github.com/Subhamp12}{\underline{github.com/Subhamp12}}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
+  \begin{itemize}[leftmargin=0.15in, label={}]
     \resumeSubheading
       {Rutgers University}{New Brunswick, NJ}
       {Bachelor of Science in Computer Science and Data Science}{Aug. 2024 -- May 2028}
     \resumeSubheading
       {John P. Stevens High School}{Edison, NJ}
       {High School Diploma | GPA: 4.9}{Sep. 2020 -- Jun. 2024}
-  \resumeSubHeadingListEnd
+  \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+  \begin{itemize}[leftmargin=0.15in, label={}]
     \resumeSubheading
-      {Website Technician}{Oct. 2024 -- Present}
+      {Full Stack Web Developer}{Oct. 2024 -- Present}
       {Rutgers University–New Brunswick}{Rutgers GRID (Game Research and Immersive Design)}
       \resumeItemListStart
-        \resumeItem{Develop, maintain, and optimize web applications, ensuring a smooth user experience across devices.}
-        \resumeItem{Conduct extensive testing using Next.js, including unit, end-to-end (e2e), and component testing to ensure application stability and functionality.}
-        \resumeItem{Collaborate closely with the GRID research team to understand project requirements and provide technical solutions.}
+        \resumeItem{Develop and maintain web applications using Next.js, PostgreSQL, and Prisma ORM.}
+        \resumeItem{Built an dashboard for CAMILE implementing role-based authentication and activity management.}
+        \resumeItem{Integrated end-to-end testing with Cypress and deployed secure RESTful APIs on Vercel.}
+        \resumeItem{Collaborate with researchers to develop interactive and data-driven learning tools.}
       \resumeItemListEnd
+  \end{itemize}
+
 
 %-----------PROJECTS-----------
 \section{Projects}
-        \resumeSubHeadingListStart
-        \resumeProjectHeading
-        {\textbf{CAMILE} $|$ \emph{Next.js, Machine Learning, AI}}{Aug. 2024 -- Present}
-        \resumeItemListStart
-          \resumeItem{Developed an AI-powered language-learning application similar to Duolingo, leveraging machine learning to provide culturally and emotionally tailored experiences.}
-          \resumeItem{Implemented a Next.js frontend integrated with an AI-driven backend to offer interactive and personalized language acquisition.}
-        \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Scarlet} $|$ \emph{React.js, Node.js, Express.js, MongoDB, Vite + Vue, Stripe API, Redux}}{Jun. 2024 -- Aug. 2024}
-          \resumeItemListStart
-            \resumeItem{Developed a fully functional e-commerce platform for clothing sales targeted at students.}
-            \resumeItem{Implemented secure user authentication, order management, and payment processing via the Stripe API.}
-            \resumeItem{Built a robust admin panel using Vite and Vue.js for product and order management.}
-            \resumeItem{Handled over 50 transactions.}
-          \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{TaskMaster} $|$ \emph{HTML, CSS, JavaScript, LocalStorage}}{Jun. 2024 -- Jul. 2024}
-          \resumeItemListStart
-            \resumeItem{Created a simple to-do list application for task management.}
-            \resumeItem{Used LocalStorage to save tasks locally in the browser, ensuring data persistence across sessions.}
-            \resumeItem{Implemented basic CRUD functionality, allowing users to add, edit, and delete tasks.}
-            \resumeItem{Designed a minimalistic user interface with HTML and CSS for an intuitive user experience.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \begin{itemize}[leftmargin=0.15in, label={}]
+\resumeProjectHeading
+  {\textbf{CAMILE} $|$ \emph{Next.js, Machine Learning, AI}}{Oct. 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Helped developed CAMILE, an innovative AI-powered language-learning platform}
+    \resumeItem{Engineered a integration of a Next.js frontend with an AI-driven backend.}
+    \resumeItem{Implemented automated role-based CRUD permissions, streamlining access control and user management.}
+    \resumeItem{Developed the backend using Prisma ORM models, ensuring scalable and maintainable data structures.}
+    \resumeItem{Leveraged advanced machine learning algorithms to adapt dynamically to users’ learning preferences and progress.}
+  \resumeItemListEnd
 
+   \resumeProjectHeading
+  {\textbf{ToggleX} $|$ \emph{Node.js, React, PostgreSQL, Redis, Feature Flags, CI/CD}}{Mar. 2024 -- May 2024}
+  \resumeItemListStart
+    \resumeItem{Developed a Feature Flag Management System to enable dynamic feature toggling without redeployments.}
+    \resumeItem{Built a role-based panel using React and Node.js, allowing teams to control feature rollouts in real time.}
+    \resumeItem{Designed a PostgreSQL-backed data store with Redis caching.}
+    \resumeItem{Integrated with CI/CD pipelines, enabling automated feature flag updates for controlled A/B testing.}
+    \resumeItem{Implemented audit logging and real-time analytics to track flag usage.}
+  \resumeItemListEnd
+  \end{itemize}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, HTML5, Java, Python, C/C++} \\
-     \textbf{Frameworks}{: React, Node.js, Express.js, MongoDB, Vue.js} \\
-     \textbf{Developer Tools}{: Git, VS Code, Google Cloud Platform, IntelliJ, Eclipse} \\
-     \textbf{UI/UX}{: Figma, Adobe Creative Cloud} \\
-     \textbf{Databases}{: MongoDB, SQLite} \\
-     \textbf{Cloud Platforms}{: Google Cloud Platform, Vercel} \\
+     \textbf{Languages}{: JavaScript, TypeScript, Python, SQL} \\
+     \textbf{Frameworks}{: React, Next.js, Express.js, Node.js, Vue.js, Prisma ORM} \\
+     \textbf{Developer Tools}{: Git, VS Code, Docker, Jest, Cypress, CI/CD} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB, SQLite, Redis} \\
+     \textbf{Cloud}{: Google Cloud Platform, Vercel, AWS (EC2, S3)} \\
+     \textbf{UI/UX}{: Figma, Adobe Creative Cloud, Tailwind CSS} \\
     }}
  \end{itemize}
 
+
 %-------------------------------------------
 \end{document}
+
