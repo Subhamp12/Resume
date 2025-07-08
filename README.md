@@ -1,3 +1,3 @@
 # Resume
 Resume in LaTeX
-Last Updated 3/28/25
+Last Updated 7/8/25
